@@ -34,6 +34,7 @@ sudo add-apt-repository \
 sudo apt-get update -y
 sudo apt-get install -y docker-ce
 sudo usermod -aG docker $USER
+sudo chown $USER ~/.docker
 
 #Install docker-compose
 COMPOSE_VERSION=1.24.1
