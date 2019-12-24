@@ -13,10 +13,10 @@ sudo apt install -y \
 
 #Install ansible
 sudo apt-add-repository --yes --update ppa:ansible/ansible
-sudo apt install ansible
+sudo apt install ansible -y
 
 #Install awscli
-sudo apt install awscli
+sudo apt install awscli -y
 
 #Install terraform
 TERRAFORM_VERSION=0.12.12
@@ -34,6 +34,7 @@ sudo add-apt-repository \
 sudo apt-get update -y
 sudo apt-get install -y docker-ce
 sudo usermod -aG docker $USER
+sudo chown $USER ~/.docker
 
 #Install docker-compose
 COMPOSE_VERSION=1.24.1
