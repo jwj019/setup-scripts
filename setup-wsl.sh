@@ -25,6 +25,6 @@ sudo mv terraform /usr/local/bin/terraform
 rm "terraform_$(echo $TERRAFORM_VERSION)_linux_amd64.zip"
 
 #Install docker-compose
-COMPOSE_VERSION=1.24.1
+COMPOSE_VERSION=1.29.2
 sudo curl -L "https://github.com/docker/compose/releases/download/$(echo $COMPOSE_VERSION)/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
