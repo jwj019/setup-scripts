@@ -1,5 +1,5 @@
 #base installs
-sudo apt update -y
+sudo apt update -y && sudo apt dist-upgrade -y
 sudo apt install -y \
     software-properties-common \
     unzip \
