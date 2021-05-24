@@ -10,6 +10,9 @@ sudo apt install -y \
     python3-pip \
     jq
 
+#Add python to path
+echo "export PYTHONPATH=/usr/local/bin/python3" >> ~/.bashrc && source ~/.bashrc
+
 #Install ansible
 pip3 install ansible
 
