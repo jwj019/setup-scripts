@@ -11,8 +11,7 @@ sudo apt install -y \
     jq
 
 #Install ansible
-sudo apt-add-repository --yes --update ppa:ansible/ansible
-sudo apt install ansible -y
+pip3 install ansible
 
 #Install awscli
 sudo apt install awscli -y
